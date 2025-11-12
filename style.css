@@ -1,0 +1,28 @@
+/* General page styling */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Container for tree image and fragments */
+.tree-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tree image size */
+.tree {
+  width: 600px; /* adjust as needed */
+}
+
+/* Clickable fragment areas */
+.fragment {
+  position: absolute;
+  width: 50px;   /* size of hotspot */
+  height: 50px;
+  display: block;
+  background-color: rgba(255, 0, 0, 0.3); /* semi-transparent circle for placement */
+  border-radius: 50%;
+  cursor: pointer;
+}
