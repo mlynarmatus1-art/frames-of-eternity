@@ -1,28 +1,47 @@
-/* General page styling */
-body {
+/* Make body fill viewport and remove default margins */
+body, html {
+  height: 100%;
+  margin: 0;
   font-family: sans-serif;
-  text-align: center;
-  margin: 20px;
 }
 
-/* Container for tree image and fragments */
+/* Full-page background image */
 .tree-container {
   position: relative;
-  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-/* Tree image size */
+/* The tree image fills container */
 .tree {
-  width: 600px; /* adjust as needed */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preserves aspect ratio while filling */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-/* Clickable fragment areas */
+/* Clickable fragments */
 .fragment {
   position: absolute;
-  width: 50px;   /* size of hotspot */
+  width: 50px;
   height: 50px;
   display: block;
-  background-color: rgba(255, 0, 0, 0.3); /* semi-transparent circle for placement */
+  background-color: rgba(255, 0, 0, 0.3);
   border-radius: 50%;
   cursor: pointer;
+  z-index: 1; /* above the image */
+}
+
+/* Title and description over the image */
+h1, p {
+  position: relative;
+  z-index: 2; /* above fragments and image */
+  color: white; /* or any color that stands out */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  text-align: center;
+  margin: 10px;
 }
