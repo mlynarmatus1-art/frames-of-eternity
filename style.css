@@ -40,7 +40,7 @@ body, html {
 h1, p {
   position: relative;
   z-index: 2; /* above fragments and image */
-  color: white; /* or any color that stands out */
+  color: black; /* or any color that stands out */
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
   text-align: center;
   margin: 10px;
