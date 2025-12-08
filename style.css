@@ -1,56 +1,35 @@
-/* Make body fill viewport and remove default margins */
+/* Set universal font for the entire site */
 body, html {
-  height: 100%;
+  font-family: "Times New Roman", Times, serif; /* Word-like serif font */
   margin: 0;
-  font-family: sans-serif;
-}
-
-/* Full-page background image */
-.tree-container {
-  position: relative;
-  width: 100%;
   height: 100%;
-  overflow: hidden;
+  color: #000;
+  line-height: 1.6;
 }
 
-/* The tree image fills container */
-.tree {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* preserves aspect ratio while filling */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-/* Clickable fragments */
-.fragment {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  display: block;
-  background-color: rgba(255, 255, 0, 0.3);
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 1; /* above the image */
-}
-
-/* Title and description over the image */
-h1, p {
-  position: relative;
-  z-index: 2; /* above fragments and image */
-  color: black; /* or any color that stands out */
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+/* Headings use the same font; only size changes */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit; /* inherit from body */
+  font-weight: normal; /* remove default bold if desired */
   text-align: center;
-  margin: 10px;
+  margin: 20px 0 10px 0;
 }
 
-/* Youtube video dynamic formatting */
+/* Paragraphs */
+p {
+  font-family: inherit; /* same as body */
+  font-size: 14px; /* adjust as needed */
+  text-align: center; /* optional: center text */
+  margin: 10px 0;
+}
+
+/* Video container */
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
+  margin: 20px auto;
+  max-width: 800px;
 }
 
 .video-container iframe {
@@ -61,27 +40,9 @@ h1, p {
   height: 100%;
 }
 
+/* Text under the video */
 .video-text {
-  display: block;
-  margin: 20px auto;
   max-width: 800px;
-  color: #000;
-  font-family: "Times New Roman", Times, serif; /* Same serif font for all text */
-  line-height: 1.6;
+  margin: 20px auto;
   text-align: center; /* center everything */
-}
-
-/* Paragraphs */
-.video-text p {
-  font-size: 14px; /* regular text size */
-  margin-top: 20px;
-}
-
-/* Headings (h2) */
-.video-text h2 {
-  font-family: "Times New Roman", Times, serif; /* match paragraphs */
-  font-size: 18px; /* slightly larger for hierarchy */
-  text-align: center; /* center-align */
-  margin-top: 30px;
-  font-weight: normal; /* optional: remove bold to match Word-like style */
 }
