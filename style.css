@@ -61,29 +61,25 @@ h1, p {
   height: 100%;
 }
 
+/* Universal style for all text under video */
 .video-text {
   display: block;
   margin: 20px auto;
   max-width: 800px;
-  color: #000; /* text color */
-  font-family: "Times New Roman", Times, serif; /* matches paragraph font */
-  font-size: 12px; /* slightly larger for the header */
-  text-align: right;
-  margin-top: 30px;
+  color: #000;
+  font-family: "Times New Roman", Times, serif; /* Word-like font */
   line-height: 1.6;
-  text-align: centre; /* ccentre-aligned */
+  text-align: center; /* center-aligned text */
 }
 
+/* Paragraphs inside .video-text */
+.video-text p {
+  font-size: 14px; /* smaller than headings */
+  margin-top: 20px;
+}
+
+/* h2 inside .video-text */
 .video-text h2 {
-  font-family: "Times New Roman", Times, serif; /* matches paragraph font */
-  font-size: 16px; /* slightly larger for the header */
-  text-align: centre; /* ccentre-aligned */
-  margin-top: 30px;
-}
-
-.video-text p.answer {
-  font-family: "Times New Roman", Times, serif; /* matches paragraph font */
-  font-size: 16px; /* slightly larger for the header */
-  text-align: centre; /* ccentre-aligned */
+  font-size: 18px; /* larger heading */
   margin-top: 30px;
 }
