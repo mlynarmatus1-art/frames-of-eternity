@@ -66,21 +66,24 @@ h1, p {
   margin: 20px auto;
   max-width: 800px;
   color: #000; /* text color */
-  font-family: "Times New Roman", Times, serif; /* same serif font as RQ */
-  font-size: 14px; /* slightly smaller than answer text */
+  font-family: "Times New Roman", Times, serif; /* matches paragraph font */
+  font-size: 12px; /* slightly larger for the header */
+  text-align: right;
+  margin-top: 30px;
   line-height: 1.6;
-  text-align: right; /* right-aligned */
+  text-align: centre; /* ccentre-aligned */
 }
 
 .video-text h2 {
   font-family: "Times New Roman", Times, serif; /* matches paragraph font */
   font-size: 16px; /* slightly larger for the header */
-  text-align: right;
+  text-align: centre; /* ccentre-aligned */
   margin-top: 30px;
 }
 
 .video-text p.answer {
-  font-size: 16px; /* regular size for the answer paragraph */
-  font-family: "Times New Roman", Times, serif;
-  text-align: right;
+  font-family: "Times New Roman", Times, serif; /* matches paragraph font */
+  font-size: 16px; /* slightly larger for the header */
+  text-align: centre; /* ccentre-aligned */
+  margin-top: 30px;
 }
