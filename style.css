@@ -65,7 +65,9 @@ h1, p {
   display: block;
   margin: 20px auto;
   max-width: 800px;
-  color: #000; /* make sure text is visible */
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  color: #000; /* text color */
+  font-family: "Times New Roman", Times, serif; /* Word-like serif font */
+  font-size: 16px; /* standard readable size */
+  line-height: 1.6; /* spacing for readability */
+  text-align: right; /* aligns text to the right */
 }
