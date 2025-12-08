@@ -27,7 +27,7 @@ By combining theological, anthropological and neuroscientific perspectives, we u
 ### LLM
 *Image Generation:* https://chatgpt.com/share/69242db0-fdac-800d-9c9e-cc7d6530d3c1
 
-*Code Consultation:*
+*Code Consultation:* https://copilot.microsoft.com/conversations/join/3PbNkJRU3P9AxhEkJFqkw
 
 ### References used throughout this project
 Abe, M. (1986). The problem of death in East and West: Immortality, eternal life, unbornness. The Eastern Buddhist, 19(2), 30–61.
