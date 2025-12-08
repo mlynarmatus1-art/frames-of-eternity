@@ -1,29 +1,76 @@
-/* Set universal font for the entire site */
+/* Base styles for the entire site */
 body, html {
-  font-family: "Times New Roman", Times, serif; /* Word-like serif font */
-  margin: 0;
   height: 100%;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif; /* Word-like font everywhere */
   color: #000;
   line-height: 1.6;
+  text-align: center; /* center all text by default */
 }
 
-/* Headings use the same font; only size changes */
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit; /* inherit from body */
-  font-weight: normal; /* remove default bold if desired */
-  text-align: center;
-  margin: 20px 0 10px 0;
+/* Full-page background image */
+.tree-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
+
+/* The tree image fills container */
+.tree {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preserves aspect ratio while filling */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Clickable fragments */
+.fragment {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: rgba(255, 255, 0, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1; /* above the image */
+}
+
+/* Header/title overlay on the tree image */
+header h1, header p {
+  position: relative;
+  z-index: 2;
+  color: black;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* shadow only for overlay text */
+  margin: 10px;
+}
+
+/* Remove default heading styles and unify font for all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;       /* inherit Times New Roman */
+  font-weight: normal;        /* remove bold unless manually specified */
+  margin: 10px 0;
+  line-height: 1.6;
+  text-shadow: none;          /* remove shadows */
+}
+
+/* Specific heading sizes for hierarchy */
+h1 { font-size: 32px; font-weight: bold; }
+h2 { font-size: 22px; font-weight: bold; }
+h3 { font-size: 18px; font-weight: bold; }
 
 /* Paragraphs */
 p {
-  font-family: inherit; /* same as body */
-  font-size: 14px; /* adjust as needed */
-  text-align: center; /* optional: center text */
+  font-size: 14px;
   margin: 10px 0;
+  text-align: center;
+  text-shadow: none;
 }
 
-/* Video container */
+/* Youtube video container */
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
@@ -40,9 +87,12 @@ p {
   height: 100%;
 }
 
-/* Text under the video */
+/* Video text block */
 .video-text {
+  display: block;
+  margin: 20px auto;
   max-width: 800px;
-  margin: 30px auto;
-  text-align: center; /* center everything */
+  font-family: inherit; /* same font as body */
+  line-height: 1.6;
+  color: #000;
 }
