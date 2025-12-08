@@ -98,3 +98,36 @@ p {
   color: #000;
   font-size: 16px; /* added since it inherits, now explicitly +2pt */
 }
+/* Responsive adjustments for phones */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .tree-container {
+    height: auto;
+  }
+
+  .tree {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .fragment {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Example repositioning for mobile */
+  .fragment:nth-of-type(1) { top: 85%; left: 15%; }
+  .fragment:nth-of-type(2) { top: 85%; left: 35%; }
+  .fragment:nth-of-type(3) { top: 87%; left: 55%; }
+  .fragment:nth-of-type(4) { top: 78%; left: 75%; }
+  .fragment:nth-of-type(5) { top: 20%; left: 45%; }
+}
