@@ -43,6 +43,6 @@ p {
 /* Text under the video */
 .video-text {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 30px auto;
   text-align: center; /* center everything */
 }
