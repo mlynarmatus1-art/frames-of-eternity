@@ -66,26 +66,22 @@ h1, p {
   margin: 20px auto;
   max-width: 800px;
   color: #000;
-  font-family: "Times New Roman", Times, serif; /* Word-like serif font for all text */
+  font-family: "Times New Roman", Times, serif; /* Same serif font for all text */
   line-height: 1.6;
-  text-align: center;
+  text-align: center; /* center everything */
 }
 
-/* All paragraphs inside .video-text */
+/* Paragraphs */
 .video-text p {
-  font-family: "Times New Roman", Times, serif; /* match paragraph font */
-  font-size: 14px; /* slightly larger for heading */
-  text-align: center; /* center-align */
-  margin-top: 30px;
-  font-weight: normal; /* optional: remove bold if you want Word-style */
+  font-size: 14px; /* regular text size */
+  margin-top: 20px;
 }
 
-/* h2 inside .video-text uses the same font, just larger */
+/* Headings (h2) */
 .video-text h2 {
-  font-family: "Times New Roman", Times, serif; /* match paragraph font */
-  font-size: 18px; /* slightly larger for heading */
+  font-family: "Times New Roman", Times, serif; /* match paragraphs */
+  font-size: 18px; /* slightly larger for hierarchy */
   text-align: center; /* center-align */
   margin-top: 30px;
-  font-weight: normal; /* optional: remove bold if you want Word-style */
+  font-weight: normal; /* optional: remove bold to match Word-like style */
 }
-
