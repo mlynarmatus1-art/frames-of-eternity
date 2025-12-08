@@ -73,10 +73,10 @@ p {
 /* Youtube video container */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%; /* 16:9 ratio (rectangular) */
   height: 0;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 800px; /* keeps it from going full screen */
 }
 
 .video-container iframe {
