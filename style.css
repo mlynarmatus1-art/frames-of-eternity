@@ -61,3 +61,11 @@ h1, p {
   height: 100%;
 }
 
+.video-text {
+  display: block;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #000; /* make sure text is visible */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
