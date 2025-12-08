@@ -73,8 +73,11 @@ h1, p {
 
 /* All paragraphs inside .video-text */
 .video-text p {
-  font-size: 14px; /* main paragraph slightly smaller */
-  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif; /* match paragraph font */
+  font-size: 14px; /* slightly larger for heading */
+  text-align: center; /* center-align */
+  margin-top: 30px;
+  font-weight: normal; /* optional: remove bold if you want Word-style */
 }
 
 /* h2 inside .video-text uses the same font, just larger */
