@@ -48,7 +48,7 @@ header h1, header p {
   margin: 10px;
 }
 
-/* Remove default heading styles and unify font for all headings */
+/* Universal heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;       /* inherit Times New Roman */
   font-weight: normal;        /* remove bold unless manually specified */
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: none;          /* remove shadows */
 }
 
-/* Specific heading sizes for hierarchy */
+/* Specific heading sizes */
 h1 { font-size: 32px; font-weight: bold; }
 h2 { font-size: 22px; font-weight: bold; }
 h3 { font-size: 18px; font-weight: bold; }
@@ -87,12 +87,13 @@ p {
   height: 100%;
 }
 
-/* Video text block */
+/* Text block under the video */
 .video-text {
   display: block;
   margin: 20px auto;
   max-width: 800px;
   font-family: inherit; /* same font as body */
   line-height: 1.6;
+  text-align: center;
   color: #000;
 }
